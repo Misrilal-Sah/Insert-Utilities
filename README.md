@@ -234,7 +234,7 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 <a href="https://github.com/Misrilal-Sah/Insert-Utilities"><img src="https://img.shields.io/badge/⭐%20Star-CBA6F7?style=flat-square&labelColor=1E1E2E&logo=github&logoColor=CBA6F7" alt="Star"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/badge/🛒%20Marketplace-89DCEB?style=flat-square&labelColor=1E1E2E" alt="Marketplace"/></a> <a href="https://github.com/Misrilal-Sah/Insert-Utilities/issues"><img src="https://img.shields.io/badge/🐛%20Issues-F38BA8?style=flat-square&labelColor=1E1E2E" alt="Issues"/></a> <img src="https://img.shields.io/badge/♥%20VS%20Code-007ACC?style=flat-square&labelColor=1E1E2E" alt="VS Code"/>
 
-<sub>Built by <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a> · <a href="https://misril.dev">misril.dev</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="LICENSE">MIT</a></sub>
+<sub>Built by <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a> · <a href="https://misril.dev">misril.dev</a>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:A6E3A1,40:FAB387,70:F38BA8,100:6C6FE4&height=120&section=footer" alt="footer"/>
 </div>
