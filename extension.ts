@@ -36,32 +36,40 @@ export function activate(context: vscode.ExtensionContext): void {
   // ─────────────────────────────────────────────
 
   // 1. Insert UUID v4 — respects uuidFormat and uuidIncludeDashes settings
+  // Generator is called per cursor so each cursor gets a unique UUID
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertUUID', async () => {
       const { uuidFormat, uuidIncludeDashes } = getConfig();
-      let text = generateUUID();
-      if (uuidFormat === 'uppercase')  { text = text.toUpperCase(); }
-      if (!uuidIncludeDashes)           { text = text.replace(/-/g, ''); }
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('UUID v4', text); }
+      let preview = '';
+      const generate = () => {
+        let t = generateUUID();
+        if (uuidFormat === 'uppercase')  { t = t.toUpperCase(); }
+        if (!uuidIncludeDashes)           { t = t.replace(/-/g, ''); }
+        if (!preview) { preview = t; }
+        return t;
+      };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('UUID v4', preview); }
     })
   );
 
-  // 2. Insert UUID v4 (UPPERCASE with dashes)
+  // 2. Insert UUID v4 (UPPERCASE with dashes) — unique per cursor
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertUUIDUppercase', async () => {
-      const text = generateUUIDUppercase();
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('UUID v4 (Uppercase)', text); }
+      let preview = '';
+      const generate = () => { const t = generateUUIDUppercase(); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('UUID v4 (Uppercase)', preview); }
     })
   );
 
-  // 3. Insert UUID v4 (no dashes)
+  // 3. Insert UUID v4 (no dashes) — unique per cursor
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertUUIDNoDashes', async () => {
-      const text = generateUUIDNoDashes();
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('UUID v4 (No Dashes)', text); }
+      let preview = '';
+      const generate = () => { const t = generateUUIDNoDashes(); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('UUID v4 (No Dashes)', preview); }
     })
   );
 
@@ -82,8 +90,8 @@ export function activate(context: vscode.ExtensionContext): void {
       if (input === undefined) { return; } // User cancelled
 
       const count = parseInt(input, 10);
-      const text = generateMultipleUUIDs(count);
-      const ok = await insertTextAtCursor(text);
+      // Each cursor gets its own independent set of N UUIDs
+      const ok = await insertTextAtCursor(() => generateMultipleUUIDs(count));
       if (ok) { showInsertNotification(`${count} UUIDs`, `(${count} UUIDs generated)`); }
     })
   );
@@ -101,33 +109,36 @@ export function activate(context: vscode.ExtensionContext): void {
     })
   );
 
-  // 6. Insert ~50 words of Lorem Ipsum
+  // 6. Insert ~50 words of Lorem Ipsum — unique per cursor
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertLoremShort', async () => {
       const { loremStartWithClassic } = getConfig();
-      const text = generateLorem(50, loremStartWithClassic);
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('Lorem Ipsum (50 words)', text); }
+      let preview = '';
+      const generate = () => { const t = generateLorem(50, loremStartWithClassic); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('Lorem Ipsum (50 words)', preview); }
     })
   );
 
-  // 7. Insert ~150 words of Lorem Ipsum
+  // 7. Insert ~150 words of Lorem Ipsum — unique per cursor
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertLoremMedium', async () => {
       const { loremStartWithClassic } = getConfig();
-      const text = generateLorem(150, loremStartWithClassic);
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('Lorem Ipsum (150 words)', text); }
+      let preview = '';
+      const generate = () => { const t = generateLorem(150, loremStartWithClassic); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('Lorem Ipsum (150 words)', preview); }
     })
   );
 
-  // 8. Insert ~500 words of Lorem Ipsum
+  // 8. Insert ~500 words of Lorem Ipsum — unique per cursor
   context.subscriptions.push(
     vscode.commands.registerCommand('insert-utilities.insertLoremLong', async () => {
       const { loremStartWithClassic } = getConfig();
-      const text = generateLorem(500, loremStartWithClassic);
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification('Lorem Ipsum (500 words)', text); }
+      let preview = '';
+      const generate = () => { const t = generateLorem(500, loremStartWithClassic); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification('Lorem Ipsum (500 words)', preview); }
     })
   );
 
@@ -149,9 +160,10 @@ export function activate(context: vscode.ExtensionContext): void {
 
       const count = parseInt(input, 10);
       const { loremStartWithClassic } = getConfig();
-      const text = generateLorem(count, loremStartWithClassic);
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification(`Lorem Ipsum (${count} words)`, text); }
+      let preview = '';
+      const generate = () => { const t = generateLorem(count, loremStartWithClassic); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(generate);
+      if (ok) { showInsertNotification(`Lorem Ipsum (${count} words)`, preview); }
     })
   );
 
@@ -213,45 +225,48 @@ export function activate(context: vscode.ExtensionContext): void {
 
       if (!selected) { return; } // User cancelled
 
-      let text: string;
+      // Generator is defined per selection so each cursor gets a unique value
+      let generate: () => string;
       let label: string;
 
       switch (selected.label) {
         case 'Random String (16 chars)':
-          text  = generateRandomString(16, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
+          generate = () => generateRandomString(16, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
           label = 'Random String (16)';
           break;
         case 'Random String (32 chars)':
-          text  = generateRandomString(32, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
+          generate = () => generateRandomString(32, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
           label = 'Random String (32)';
           break;
         case 'Random String (64 chars)':
-          text  = generateRandomString(64, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
+          generate = () => generateRandomString(64, randomStringCharset === 'alphabetic' ? 'alphabetic' : 'alphanumeric');
           label = 'Random String (64)';
           break;
         case 'Random Hex (16 chars)':
-          text  = generateRandomString(16, 'hex');
+          generate = () => generateRandomString(16, 'hex');
           label = 'Random Hex (16)';
           break;
         case 'Random Hex (32 chars)':
-          text  = generateRandomString(32, 'hex');
+          generate = () => generateRandomString(32, 'hex');
           label = 'Random Hex (32)';
           break;
         case 'Random Number (6 digits)':
-          text  = generateRandomNumber(6);
+          generate = () => generateRandomNumber(6);
           label = 'Random Number (6)';
           break;
         case 'Random Number (10 digits)':
-          text  = generateRandomNumber(10);
+          generate = () => generateRandomNumber(10);
           label = 'Random Number (10)';
           break;
         default:
-          text  = generateRandomString(16, randomStringCharset);
+          generate = () => generateRandomString(16, randomStringCharset);
           label = `${preferred} (16)`;
       }
 
-      const ok = await insertTextAtCursor(text);
-      if (ok) { showInsertNotification(label, text); }
+      let preview = '';
+      const wrappedGenerate = () => { const t = generate(); if (!preview) { preview = t; } return t; };
+      const ok = await insertTextAtCursor(wrappedGenerate);
+      if (ok) { showInsertNotification(label, preview); }
     })
   );
 }

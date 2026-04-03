@@ -1,14 +1,15 @@
 import * as vscode from 'vscode';
 
 /**
- * Inserts the given text at all cursor positions in the active editor.
+ * Inserts text at all cursor positions in the active editor.
+ * Accepts either a plain string (same value at every cursor) or a generator
+ * function that is called **once per cursor** so each cursor gets a unique value.
  * If a selection is active, it replaces the selected text.
- * Supports multi-cursor editing.
  *
- * @param text - The text to insert
+ * @param textOrGenerator - A string, or a () => string factory called per cursor
  * @returns true if the insert was successful, false otherwise
  */
-export async function insertTextAtCursor(text: string): Promise<boolean> {
+export async function insertTextAtCursor(textOrGenerator: string | (() => string)): Promise<boolean> {
   const editor = vscode.window.activeTextEditor;
 
   if (!editor) {
@@ -18,6 +19,8 @@ export async function insertTextAtCursor(text: string): Promise<boolean> {
 
   const success = await editor.edit((editBuilder) => {
     for (const selection of editor.selections) {
+      // Call the generator fresh for every cursor so each gets a unique value
+      const text = typeof textOrGenerator === 'function' ? textOrGenerator() : textOrGenerator;
       if (selection.isEmpty) {
         // No selection — insert at cursor position
         editBuilder.insert(selection.active, text);
