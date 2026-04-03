@@ -1,27 +1,44 @@
 <div align="center">
 
-<img src="assets/logo.png" width="120" alt="Insert Utilities Logo" />
+<img src="https://img.shields.io/badge/-%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
 
-# Insert Utilities
+<br/>
 
-### The all-in-one text generator for VS Code developers
+<img src="assets/logo.png" width="110" alt="Insert Utilities Logo" />
 
-<p>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.insert-utilities?style=for-the-badge&color=6C6FE4&labelColor=1E1E2E&label=VERSION" alt="Version"/>
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-    <img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.insert-utilities?style=for-the-badge&color=F38BA8&labelColor=1E1E2E&label=INSTALLS" alt="Installs"/>
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.insert-utilities?style=for-the-badge&color=A6E3A1&labelColor=1E1E2E&label=RATING" alt="Rating"/>
-  </a>
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/LICENSE-MIT-CBA6F7?style=for-the-badge&labelColor=1E1E2E" alt="License"/>
-  </a>
-</p>
+<br/>
 
-<p><em>Stop switching tabs. Insert UUIDs, Lorem Ipsum, timestamps, and random strings<br/>directly into your editor &mdash; keyboard shortcut, Command Palette, or right-click.</em></p>
+<img src="https://img.shields.io/badge/INSERT-UTILITIES-6C6FE4?style=for-the-badge&labelColor=1E1E2E&logoColor=white" alt="Insert Utilities"/>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/🔑%20UUID-1E1E2E?style=flat-square&labelColor=6C6FE4&color=6C6FE4" alt="UUID"/>
+<img src="https://img.shields.io/badge/📝%20LOREM-1E1E2E?style=flat-square&labelColor=F38BA8&color=F38BA8" alt="Lorem"/>
+<img src="https://img.shields.io/badge/🕐%20TIMESTAMP-1E1E2E?style=flat-square&labelColor=A6E3A1&color=A6E3A1" alt="Timestamp"/>
+<img src="https://img.shields.io/badge/🎲%20RANDOM-1E1E2E?style=flat-square&labelColor=FAB387&color=FAB387" alt="Random"/>
+
+<br/><br/>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
+  <img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.insert-utilities?style=for-the-badge&color=6C6FE4&labelColor=1E1E2E&label=VERSION" alt="Version"/>
+</a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
+  <img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.insert-utilities?style=for-the-badge&color=F38BA8&labelColor=1E1E2E&label=INSTALLS" alt="Installs"/>
+</a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
+  <img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.insert-utilities?style=for-the-badge&color=A6E3A1&labelColor=1E1E2E&label=RATING" alt="Rating"/>
+</a>
+<a href="LICENSE">
+  <img src="https://img.shields.io/badge/LICENSE-MIT-CBA6F7?style=for-the-badge&labelColor=1E1E2E" alt="License"/>
+</a>
+
+<br/><br/>
+
+<em>Stop switching tabs. Insert UUIDs, Lorem Ipsum, timestamps, and random strings<br/>directly into your editor — keyboard shortcut, Command Palette, or right-click.</em>
+
+<br/>
+
+<img src="https://img.shields.io/badge/-%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
 
 </div>
 
@@ -186,33 +203,23 @@ Open `Ctrl+,` and search **"Insert Utilities"**, or paste into `settings.json`:
 
 **Marketplace**
 
-1. Open VS Code → `Ctrl+P`
-2. Paste: `ext install Misrilal-Sah.insert-utilities`
-3. Press Enter
+1. Open VS Code
+2. Go to **Extensions** (`Ctrl+Shift+X`)
+3. Search for **Insert Utilities**
+4. Click **Install**
 
-**CLI**
+**Quick open:**
+
+Press `Ctrl+P` and run:
+```
+ext install Misrilal-Sah.insert-utilities
+```
+
+**From the CLI:**
+
 ```bash
 code --install-extension Misrilal-Sah.insert-utilities
 ```
-
-**VSIX (manual)**
-```bash
-code --install-extension insert-utilities-1.0.0.vsix
-```
-
----
-
-## ◈ Development
-
-```bash
-git clone https://github.com/Misrilal-Sah/Insert-Utilities.git
-cd Insert-Utilities
-npm install
-npm run compile     # one-time build
-npm run watch       # rebuild on save
-```
-
-Launch the Extension Development Host: `Ctrl+Shift+P` → `Debug: Start Debugging` → `VS Code Extension Development`
 
 ---
 
@@ -250,57 +257,45 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 <div align="center">
 
----
+<img src="https://img.shields.io/badge/-%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
 
-<table border="0" cellspacing="0" cellpadding="8">
-<tr>
-<td align="center" width="200">
-<strong>🔑 Generate</strong><br/>
-<sub>UUIDs · Timestamps<br/>Lorem · Random</sub>
-</td>
-<td align="center" width="40"><sub>◆</sub></td>
-<td align="center" width="200">
-<strong>⌨️ Keyboard First</strong><br/>
-<sub>Ctrl+Alt+U · L · T · R<br/>Palette · Context Menu</sub>
-</td>
-<td align="center" width="40"><sub>◆</sub></td>
-<td align="center" width="200">
-<strong>🔒 Crypto Secure</strong><br/>
-<sub>crypto.randomUUID()<br/>crypto.randomBytes()</sub>
-</td>
-</tr>
-</table>
+<br/><br/>
 
----
+<img src="https://img.shields.io/badge/🔑%20UUID-6C6FE4?style=for-the-badge&labelColor=1E1E2E" alt="UUID"/>
+<img src="https://img.shields.io/badge/📝%20LOREM-F38BA8?style=for-the-badge&labelColor=1E1E2E" alt="Lorem"/>
+<img src="https://img.shields.io/badge/🕐%20TIMESTAMP-A6E3A1?style=for-the-badge&labelColor=1E1E2E" alt="Timestamp"/>
+<img src="https://img.shields.io/badge/🎲%20RANDOM-FAB387?style=for-the-badge&labelColor=1E1E2E" alt="Random"/>
 
-<p>
-  <a href="https://github.com/Misrilal-Sah/Insert-Utilities">
-    <img src="https://img.shields.io/badge/%E2%98%85%20Star%20on%20GitHub-1E1E2E?style=for-the-badge&logo=github&logoColor=CBA6F7" alt="Star on GitHub"/>
-  </a>
-  &nbsp;
-  <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-    <img src="https://img.shields.io/badge/%F0%9F%93%9D%20Marketplace-1E1E2E?style=for-the-badge&logoColor=A6E3A1" alt="Marketplace"/>
-  </a>
-  &nbsp;
-  <a href="https://github.com/Misrilal-Sah/Insert-Utilities/issues">
-    <img src="https://img.shields.io/badge/%F0%9F%90%9B%20Report%20a%20Bug-1E1E2E?style=for-the-badge&logoColor=F38BA8" alt="Issues"/>
-  </a>
-</p>
+<br/><br/>
 
-<sub>Built with ♥ by <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a> &nbsp;·&nbsp; MIT License &nbsp;·&nbsp; <a href="https://misril.dev/">misril.dev</a></sub>
+<a href="https://github.com/Misrilal-Sah/Insert-Utilities">
+  <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-CBA6F7?style=for-the-badge&labelColor=1E1E2E&logo=github&logoColor=CBA6F7" alt="Star"/>
+</a>
+<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
+  <img src="https://img.shields.io/badge/🛒%20Marketplace-89DCEB?style=for-the-badge&labelColor=1E1E2E" alt="Marketplace"/>
+</a>
+<a href="https://github.com/Misrilal-Sah/Insert-Utilities/issues">
+  <img src="https://img.shields.io/badge/🐛%20Issues-F38BA8?style=for-the-badge&labelColor=1E1E2E" alt="Issues"/>
+</a>
+
+<br/><br/>
+
+<img src="https://img.shields.io/badge/Built%20with%20%E2%99%A5%20for%20VS%20Code-007ACC?style=for-the-badge&labelColor=1E1E2E" alt="Built for VS Code"/>
+
+<br/><br/>
+
+<sub>
+  <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://misril.dev">misril.dev</a>
+  &nbsp;·&nbsp;
+  <a href="CHANGELOG.md">Changelog</a>
+  &nbsp;·&nbsp;
+  <a href="LICENSE">MIT</a>
+</sub>
 
 <br/>
 
-<sub>
-◈ &nbsp;
-<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">Marketplace</a>
-&nbsp;·&nbsp;
-<a href="https://github.com/Misrilal-Sah/Insert-Utilities">GitHub</a>
-&nbsp;·&nbsp;
-<a href="CHANGELOG.md">Changelog</a>
-&nbsp;·&nbsp;
-<a href="LICENSE">MIT</a>
-&nbsp; ◈
-</sub>
+<img src="https://img.shields.io/badge/-%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
 
 </div>
