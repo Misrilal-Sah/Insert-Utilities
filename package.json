@@ -1,0 +1,258 @@
+{
+  "name": "insert-utilities",
+  "displayName": "Insert Utilities - UUID & Lorem Ipsum Generator",
+  "description": "Instantly insert UUID v4, Lorem Ipsum paragraphs, timestamps, random strings, and placeholder text with one click or keyboard shortcut. The ultimate text generator for developers.",
+  "version": "1.0.0",
+  "publisher": "Misrilal-Sah",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": ["Other", "Snippets"],
+  "keywords": [
+    "uuid", "lorem ipsum", "generator", "placeholder",
+    "random", "insert", "text", "dummy text", "guid", "productivity"
+  ],
+  "galleryBanner": {
+    "color": "#1E1E2E",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Misrilal-Sah/Insert-Utilities"
+  },
+  "bugs": {
+    "url": "https://github.com/Misrilal-Sah/Insert-Utilities/issues"
+  },
+  "homepage": "https://github.com/Misrilal-Sah/Insert-Utilities#readme",
+  "main": "./out/extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "insert-utilities.insertUUID",
+        "title": "🔑 Insert UUID v4",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertUUIDUppercase",
+        "title": "🔑 Insert UUID v4 (Uppercase)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertUUIDNoDashes",
+        "title": "🔑 Insert UUID v4 (No Dashes)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertMultipleUUIDs",
+        "title": "🔑 Insert Multiple UUIDs",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertLoremSentence",
+        "title": "📝 Insert Lorem Ipsum (1 Sentence)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertLoremShort",
+        "title": "📝 Insert Lorem Ipsum (50 Words)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertLoremMedium",
+        "title": "📝 Insert Lorem Ipsum (150 Words)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertLoremLong",
+        "title": "📝 Insert Lorem Ipsum (500 Words)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertLoremCustom",
+        "title": "📝 Insert Lorem Ipsum (Custom Length)",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertTimestamp",
+        "title": "🕐 Insert Current Timestamp",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertTimestampISO",
+        "title": "🕐 Insert ISO Timestamp",
+        "category": "Insert Utilities"
+      },
+      {
+        "command": "insert-utilities.insertRandomString",
+        "title": "🎲 Insert Random String",
+        "category": "Insert Utilities"
+      }
+    ],
+    "submenus": [
+      {
+        "id": "insert-utilities.submenu",
+        "label": "✨ Insert Utilities"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "submenu": "insert-utilities.submenu",
+          "group": "9_cutcopypaste@3"
+        }
+      ],
+      "insert-utilities.submenu": [
+        {
+          "command": "insert-utilities.insertUUID",
+          "group": "1_uuid@1"
+        },
+        {
+          "command": "insert-utilities.insertUUIDUppercase",
+          "group": "1_uuid@2"
+        },
+        {
+          "command": "insert-utilities.insertUUIDNoDashes",
+          "group": "1_uuid@3"
+        },
+        {
+          "command": "insert-utilities.insertMultipleUUIDs",
+          "group": "1_uuid@4"
+        },
+        {
+          "command": "insert-utilities.insertLoremSentence",
+          "group": "2_lorem@1"
+        },
+        {
+          "command": "insert-utilities.insertLoremShort",
+          "group": "2_lorem@2"
+        },
+        {
+          "command": "insert-utilities.insertLoremMedium",
+          "group": "2_lorem@3"
+        },
+        {
+          "command": "insert-utilities.insertLoremLong",
+          "group": "2_lorem@4"
+        },
+        {
+          "command": "insert-utilities.insertLoremCustom",
+          "group": "2_lorem@5"
+        },
+        {
+          "command": "insert-utilities.insertTimestamp",
+          "group": "3_timestamp@1"
+        },
+        {
+          "command": "insert-utilities.insertTimestampISO",
+          "group": "3_timestamp@2"
+        },
+        {
+          "command": "insert-utilities.insertRandomString",
+          "group": "4_random@1"
+        }
+      ],
+      "commandPalette": [
+        { "command": "insert-utilities.insertUUID" },
+        { "command": "insert-utilities.insertUUIDUppercase" },
+        { "command": "insert-utilities.insertUUIDNoDashes" },
+        { "command": "insert-utilities.insertMultipleUUIDs" },
+        { "command": "insert-utilities.insertLoremSentence" },
+        { "command": "insert-utilities.insertLoremShort" },
+        { "command": "insert-utilities.insertLoremMedium" },
+        { "command": "insert-utilities.insertLoremLong" },
+        { "command": "insert-utilities.insertLoremCustom" },
+        { "command": "insert-utilities.insertTimestamp" },
+        { "command": "insert-utilities.insertTimestampISO" },
+        { "command": "insert-utilities.insertRandomString" }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "insert-utilities.insertUUID",
+        "key": "ctrl+alt+u",
+        "mac": "cmd+alt+u",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "insert-utilities.insertLoremMedium",
+        "key": "ctrl+alt+l",
+        "mac": "cmd+alt+l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "insert-utilities.insertTimestamp",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "insert-utilities.insertRandomString",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "Insert Utilities",
+      "properties": {
+        "insertUtilities.uuidFormat": {
+          "type": "string",
+          "default": "lowercase",
+          "enum": ["lowercase", "uppercase"],
+          "description": "Default UUID format"
+        },
+        "insertUtilities.uuidIncludeDashes": {
+          "type": "boolean",
+          "default": true,
+          "description": "Include dashes in UUID by default"
+        },
+        "insertUtilities.loremStartWithClassic": {
+          "type": "boolean",
+          "default": true,
+          "description": "Always start Lorem Ipsum with 'Lorem ipsum dolor sit amet...'"
+        },
+        "insertUtilities.timestampFormat": {
+          "type": "string",
+          "default": "YYYY-MM-DD HH:mm:ss",
+          "enum": [
+            "YYYY-MM-DD HH:mm:ss",
+            "YYYY-MM-DDTHH:mm:ssZ",
+            "MM/DD/YYYY HH:mm:ss",
+            "DD/MM/YYYY HH:mm:ss",
+            "MMMM DD, YYYY",
+            "Unix Epoch"
+          ],
+          "description": "Default timestamp format"
+        },
+        "insertUtilities.showNotification": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show notification after inserting text"
+        },
+        "insertUtilities.randomStringCharset": {
+          "type": "string",
+          "default": "alphanumeric",
+          "enum": ["alphanumeric", "alphabetic", "numeric", "hex"],
+          "description": "Character set for random string generation"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "lint": "eslint . --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/node": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}

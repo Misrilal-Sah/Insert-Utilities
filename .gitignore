@@ -1,0 +1,13 @@
+out/
+node_modules/
+.vscode-test/
+*.vsix
+.DS_Store
+*.js.map
+editor.js
+extension.js
+lorem.js
+random.js
+timestamp.js
+uuid.js
+proj2.txt
