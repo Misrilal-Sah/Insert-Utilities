@@ -1,6 +1,7 @@
 <div align="center">
-<img src="assets/logo.png" width="96" alt="Insert Utilities Logo" /><br/>
-<img src="https://img.shields.io/badge/INSERT%20UTILITIES-The%20all--in--one%20text%20generator-6C6FE4?style=for-the-badge&labelColor=1E1E2E" alt="Insert Utilities"/><br/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6C6FE4,40:F38BA8,70:FAB387,100:A6E3A1&height=200&section=header&text=Insert%20Utilities&fontSize=52&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=The%20all-in-one%20text%20generator%20for%20VS%20Code&descAlignY=58&descSize=17" alt="Insert Utilities"/>
+
+<img src="assets/logo.png" width="80" alt="Insert Utilities Logo" /><br/>
 <img src="https://img.shields.io/badge/🔑%20UUID-6C6FE4?style=flat-square&labelColor=1E1E2E" alt="UUID"/> <img src="https://img.shields.io/badge/📝%20LOREM-F38BA8?style=flat-square&labelColor=1E1E2E" alt="Lorem"/> <img src="https://img.shields.io/badge/🕐%20TIMESTAMP-A6E3A1?style=flat-square&labelColor=1E1E2E" alt="Timestamp"/> <img src="https://img.shields.io/badge/🎲%20RANDOM-FAB387?style=flat-square&labelColor=1E1E2E" alt="Random"/><br/>
 <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.insert-utilities?style=flat-square&color=6C6FE4&labelColor=1E1E2E&label=version" alt="Version"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.insert-utilities?style=flat-square&color=F38BA8&labelColor=1E1E2E&label=installs" alt="Installs"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.insert-utilities?style=flat-square&color=A6E3A1&labelColor=1E1E2E&label=rating" alt="Rating"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-CBA6F7?style=flat-square&labelColor=1E1E2E" alt="License"/></a><br/>
 <sub><em>Stop switching tabs — insert UUIDs, Lorem Ipsum, timestamps &amp; random strings via shortcut, palette, or right-click</em></sub>
@@ -82,6 +83,14 @@ Cursor 3 → c3d4e5f6-a7b8-9012-cdef-123456789012
 | Insert Random String | `Ctrl+Alt+R` | `Cmd+Alt+R` |
 
 Customize any shortcut: `Ctrl+K Ctrl+S` → search "Insert Utilities"
+
+---
+
+## ◈ Demo
+
+<div align="center">
+<img src="assets/insert_utilities.gif" alt="Insert Utilities Demo" width="700"/>
+</div>
 
 ---
 
@@ -227,4 +236,5 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 <sub>Built by <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a> · <a href="https://misril.dev">misril.dev</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="LICENSE">MIT</a></sub>
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:A6E3A1,40:FAB387,70:F38BA8,100:6C6FE4&height=120&section=footer" alt="footer"/>
 </div>

@@ -11,6 +11,7 @@ node_modules/**
 *.txt
 *.png
 !assets/logo.png
+!assets/insert_utilities.gif
 launch.json
 tasks.json
 RUN.md
