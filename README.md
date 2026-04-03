@@ -1,45 +1,9 @@
 <div align="center">
-
-<img src="https://img.shields.io/badge/-%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
-
-<br/>
-
-<img src="assets/logo.png" width="110" alt="Insert Utilities Logo" />
-
-<br/>
-
-<img src="https://img.shields.io/badge/INSERT-UTILITIES-6C6FE4?style=for-the-badge&labelColor=1E1E2E&logoColor=white" alt="Insert Utilities"/>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/🔑%20UUID-1E1E2E?style=flat-square&labelColor=6C6FE4&color=6C6FE4" alt="UUID"/>
-<img src="https://img.shields.io/badge/📝%20LOREM-1E1E2E?style=flat-square&labelColor=F38BA8&color=F38BA8" alt="Lorem"/>
-<img src="https://img.shields.io/badge/🕐%20TIMESTAMP-1E1E2E?style=flat-square&labelColor=A6E3A1&color=A6E3A1" alt="Timestamp"/>
-<img src="https://img.shields.io/badge/🎲%20RANDOM-1E1E2E?style=flat-square&labelColor=FAB387&color=FAB387" alt="Random"/>
-
-<br/><br/>
-
-<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-  <img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.insert-utilities?style=for-the-badge&color=6C6FE4&labelColor=1E1E2E&label=VERSION" alt="Version"/>
-</a>
-<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-  <img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.insert-utilities?style=for-the-badge&color=F38BA8&labelColor=1E1E2E&label=INSTALLS" alt="Installs"/>
-</a>
-<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-  <img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.insert-utilities?style=for-the-badge&color=A6E3A1&labelColor=1E1E2E&label=RATING" alt="Rating"/>
-</a>
-<a href="LICENSE">
-  <img src="https://img.shields.io/badge/LICENSE-MIT-CBA6F7?style=for-the-badge&labelColor=1E1E2E" alt="License"/>
-</a>
-
-<br/><br/>
-
-<em>Stop switching tabs. Insert UUIDs, Lorem Ipsum, timestamps, and random strings<br/>directly into your editor — keyboard shortcut, Command Palette, or right-click.</em>
-
-<br/>
-
-<img src="https://img.shields.io/badge/-%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86%E2%97%86-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
-
+<img src="assets/logo.png" width="96" alt="Insert Utilities Logo" /><br/>
+<img src="https://img.shields.io/badge/INSERT%20UTILITIES-The%20all--in--one%20text%20generator-6C6FE4?style=for-the-badge&labelColor=1E1E2E" alt="Insert Utilities"/><br/>
+<img src="https://img.shields.io/badge/🔑%20UUID-6C6FE4?style=flat-square&labelColor=1E1E2E" alt="UUID"/> <img src="https://img.shields.io/badge/📝%20LOREM-F38BA8?style=flat-square&labelColor=1E1E2E" alt="Lorem"/> <img src="https://img.shields.io/badge/🕐%20TIMESTAMP-A6E3A1?style=flat-square&labelColor=1E1E2E" alt="Timestamp"/> <img src="https://img.shields.io/badge/🎲%20RANDOM-FAB387?style=flat-square&labelColor=1E1E2E" alt="Random"/><br/>
+<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/v/Misrilal-Sah.insert-utilities?style=flat-square&color=6C6FE4&labelColor=1E1E2E&label=version" alt="Version"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/i/Misrilal-Sah.insert-utilities?style=flat-square&color=F38BA8&labelColor=1E1E2E&label=installs" alt="Installs"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/visual-studio-marketplace/r/Misrilal-Sah.insert-utilities?style=flat-square&color=A6E3A1&labelColor=1E1E2E&label=rating" alt="Rating"/></a> <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-CBA6F7?style=flat-square&labelColor=1E1E2E" alt="License"/></a><br/>
+<sub><em>Stop switching tabs — insert UUIDs, Lorem Ipsum, timestamps &amp; random strings via shortcut, palette, or right-click</em></sub>
 </div>
 
 ---
@@ -257,45 +221,10 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/-%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84%E2%96%84-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
+<img src="https://img.shields.io/badge/🔑%20UUID-6C6FE4?style=flat-square&labelColor=1E1E2E" alt="UUID"/> <img src="https://img.shields.io/badge/📝%20LOREM-F38BA8?style=flat-square&labelColor=1E1E2E" alt="Lorem"/> <img src="https://img.shields.io/badge/🕐%20TIMESTAMP-A6E3A1?style=flat-square&labelColor=1E1E2E" alt="Timestamp"/> <img src="https://img.shields.io/badge/🎲%20RANDOM-FAB387?style=flat-square&labelColor=1E1E2E" alt="Random"/>
 
-<br/><br/>
+<a href="https://github.com/Misrilal-Sah/Insert-Utilities"><img src="https://img.shields.io/badge/⭐%20Star-CBA6F7?style=flat-square&labelColor=1E1E2E&logo=github&logoColor=CBA6F7" alt="Star"/></a> <a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities"><img src="https://img.shields.io/badge/🛒%20Marketplace-89DCEB?style=flat-square&labelColor=1E1E2E" alt="Marketplace"/></a> <a href="https://github.com/Misrilal-Sah/Insert-Utilities/issues"><img src="https://img.shields.io/badge/🐛%20Issues-F38BA8?style=flat-square&labelColor=1E1E2E" alt="Issues"/></a> <img src="https://img.shields.io/badge/♥%20VS%20Code-007ACC?style=flat-square&labelColor=1E1E2E" alt="VS Code"/>
 
-<img src="https://img.shields.io/badge/🔑%20UUID-6C6FE4?style=for-the-badge&labelColor=1E1E2E" alt="UUID"/>
-<img src="https://img.shields.io/badge/📝%20LOREM-F38BA8?style=for-the-badge&labelColor=1E1E2E" alt="Lorem"/>
-<img src="https://img.shields.io/badge/🕐%20TIMESTAMP-A6E3A1?style=for-the-badge&labelColor=1E1E2E" alt="Timestamp"/>
-<img src="https://img.shields.io/badge/🎲%20RANDOM-FAB387?style=for-the-badge&labelColor=1E1E2E" alt="Random"/>
-
-<br/><br/>
-
-<a href="https://github.com/Misrilal-Sah/Insert-Utilities">
-  <img src="https://img.shields.io/badge/⭐%20Star%20on%20GitHub-CBA6F7?style=for-the-badge&labelColor=1E1E2E&logo=github&logoColor=CBA6F7" alt="Star"/>
-</a>
-<a href="https://marketplace.visualstudio.com/items?itemName=Misrilal-Sah.insert-utilities">
-  <img src="https://img.shields.io/badge/🛒%20Marketplace-89DCEB?style=for-the-badge&labelColor=1E1E2E" alt="Marketplace"/>
-</a>
-<a href="https://github.com/Misrilal-Sah/Insert-Utilities/issues">
-  <img src="https://img.shields.io/badge/🐛%20Issues-F38BA8?style=for-the-badge&labelColor=1E1E2E" alt="Issues"/>
-</a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Built%20with%20%E2%99%A5%20for%20VS%20Code-007ACC?style=for-the-badge&labelColor=1E1E2E" alt="Built for VS Code"/>
-
-<br/><br/>
-
-<sub>
-  <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://misril.dev">misril.dev</a>
-  &nbsp;·&nbsp;
-  <a href="CHANGELOG.md">Changelog</a>
-  &nbsp;·&nbsp;
-  <a href="LICENSE">MIT</a>
-</sub>
-
-<br/>
-
-<img src="https://img.shields.io/badge/-%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80%E2%96%80-6C6FE4?style=flat-square&labelColor=6C6FE4" alt=""/>
+<sub>Built by <a href="https://github.com/Misrilal-Sah"><strong>Misrilal Sah</strong></a> · <a href="https://misril.dev">misril.dev</a> · <a href="CHANGELOG.md">Changelog</a> · <a href="LICENSE">MIT</a></sub>
 
 </div>
