@@ -13,6 +13,7 @@
     "uuid", "lorem ipsum", "generator", "placeholder",
     "random", "insert", "text", "dummy text", "guid", "productivity"
   ],
+  "icon": "assets/logo.png",
   "galleryBanner": {
     "color": "#1E1E2E",
     "theme": "dark"
